@@ -24,3 +24,9 @@ impares: list[int] = list(range(1, 20 + 1, 2))
 
 for valor in impares:
     print(valor)
+
+
+multiple: list[int] = list(range(1, 10 + 1))
+
+for cd in multiple:
+    print(f"la multiplicacion de {cd} * 3, da como resultado: {cd * 3}")
