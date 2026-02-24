@@ -32,18 +32,6 @@ class Car:
         self.lectura_odometro += km
 
 
-mi_nuevo_carro = Car("Chevrolet", "Corsa", 2004)
-
-print(mi_nuevo_carro.obtener_descripcion())
-mi_nuevo_carro.leer_odometro()
-
-mi_nuevo_carro.actualizar_odometro(24)
-mi_nuevo_carro.leer_odometro()
-
-mi_nuevo_carro.incrementar_odometro(20)
-mi_nuevo_carro.leer_odometro()
-
-
 class carro_electrico(Car):
     def __init__(self, fabricante, modelo, ano):
         super().__init__(fabricante, modelo, ano)
@@ -51,8 +39,3 @@ class carro_electrico(Car):
 
     def tamaño_bateria(self):
         print(f"El tamaño de la bateria es de {self.tamaño_bateria_integrada}")
-
-
-mi_nuevo_carro_electrico = carro_electrico("Toyota", "Camry", 2025)
-print(mi_nuevo_carro_electrico.obtener_descripcion())
-mi_nuevo_carro_electrico.tamaño_bateria()
